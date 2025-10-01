@@ -1,1 +1,3 @@
-
+snscrape
+requests
+python-dotenv

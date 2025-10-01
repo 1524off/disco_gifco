@@ -1,3 +1,0 @@
-snscrape
-requests
-python-dotenv

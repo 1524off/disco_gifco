@@ -1,1 +1,1 @@
-ディスコギフコメイン
+point("hello gift code")

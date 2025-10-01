@@ -1,27 +1,33 @@
 name: Tweet Forwarder
 
 on:
+  workflow_dispatch:
   schedule:
-    - cron: "*/10 * * * *"   # 10分ごとに自動実行
-  workflow_dispatch:          # 手動実行も可能
+    
+cron: "/10 * * *"   # 10分おきに実行,
 
 jobs:
   run:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout repo
-      uses: actions/checkout@v4
+      
+name: Checkout repo
+      uses: actions/checkout@v3,
 
-    - name: Set up Python
+      
+name: Set up Python
       uses: actions/setup-python@v4
       with:
-        python-version: '3.11'
+        python-version: "3.11",
 
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install -r requirements.txt
+      
+name: Install dependencies
+      run: pip install -r requirements.txt,
 
-    - name: Run bot
-      run: python tweet_forwarder.py
+      
+name: Run bot
+      run: python tweet_forwarder.py,
+新規
+
+@まりん へメッセージを送信
+
